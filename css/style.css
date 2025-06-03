@@ -395,26 +395,20 @@ nav,
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .dish1 {
   max-width: 207px;
   position: absolute;
-  top: -195px;
-  left: -90px;
+  top: calc(-335px / 2);
+  left: 50%;
+  transform: translate(-50%);
 }
 
-/* .dish1 > img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-} */
-
-.image-container > .price {
-  position: relative;
-  top: -115px;
-  right: -90px;
+.price {
+  position: absolute;
+  top: 75px;
+  right: -20px;
   color: white;
   background-color: black;
   border-radius: 50%;
@@ -426,12 +420,13 @@ nav,
   margin-block: 200px 156px;
   padding-block: 70px;
   display: flex;
+  height: 207px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid white;
   border-radius: 35px 5px;
-  /* position: relative; */
+  position: relative;
 }
 
 h3 {
@@ -903,7 +898,7 @@ footer a {
   padding-top: 0;
 }
 
-.row2>p{
+.row2 > p {
   display: flex;
   justify-content: space-between;
   align-items: center;
