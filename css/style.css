@@ -1032,13 +1032,19 @@ hr {
   }
 
   .promo-code {
-    background: url(../assets/swipper-section-img.png) center/cover no-repeat;
-    min-height: 407px;
-    display: flex;
+    background: url(../assets/swipper-section-img.png) center / cover no-repeat;
+    min-height: 270px;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 50px; */
+    position: absolute;
+    bottom: -150px;
+    left: 15px;
+    /* right: 10px; */
+    width: 95%;
+    border-radius: 50px;
   }
 
   .sm-swipper-section-img {
@@ -1046,14 +1052,14 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
   }
 
   .sm-swipper-section-img > p {
-    max-width: 804px;
+    /* max-width: 804px;
     margin: 0 auto;
-    text-align: center;
-    font-size: 40px;
+    text-align: center; */
+    font-size: 30px;
     font-weight: bold;
     color: white;
   }
@@ -1074,7 +1080,7 @@ hr {
   /* Footer Section */
 
   footer > div > div {
-    padding-top: 100px;
+    padding-top: 180px;
   }
 }
 
@@ -1202,7 +1208,6 @@ hr {
     padding: 114px 0;
   }
 
-
   .swipper-section .subtitle {
     font-size: 35px;
   }
@@ -1211,7 +1216,7 @@ hr {
     font-size: 14px;
   }
 
-  .customer-card{
+  .customer-card {
     width: 80%;
     margin: 50px auto;
   }
@@ -1313,7 +1318,7 @@ hr {
   /* Our Happy Customers Section */
 
   .swipper-section {
-    padding: 114px 0 50px;
+    padding: 114px 0 150px;
   }
 
   .swipper-section .subtitle {
@@ -1323,6 +1328,12 @@ hr {
   .swipper-section .description {
     font-size: 12px;
   }
+
+      .promo-code .input-field {
+        min-width: 150px;
+        padding: 5px 10px;
+        border-radius: 8px;
+    }
 
   /* Footer Section */
   footer > div > div {
