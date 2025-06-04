@@ -1202,12 +1202,18 @@ hr {
     padding: 114px 0;
   }
 
+
   .swipper-section .subtitle {
     font-size: 35px;
   }
 
   .swipper-section .description {
     font-size: 14px;
+  }
+
+  .customer-card{
+    width: 80%;
+    margin: 50px auto;
   }
 
   .customer-review {
