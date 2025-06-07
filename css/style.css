@@ -1303,7 +1303,7 @@ hr {
     width: 100%;
     height: 380px !important;
     overflow: hidden;
-  } 
+  }
 
   .row6 {
     display: block;
@@ -1361,9 +1361,19 @@ hr {
   .swiper-pagination {
     bottom: 70px;
   }
+
+  .welcome-section {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    /* background-color: rgb(232, 229, 229); */
+  }
+
+  .expert-chefs {
+    padding-top: 75px;
+  }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   /* Header Section */
 
   .nav-right > ul > li > a,
@@ -1447,6 +1457,7 @@ hr {
   .footer-lists a,
   .row2 p {
     font-size: 12px;
+    text-align: center;
   }
 
   .row2 > div {
