@@ -403,7 +403,6 @@ nav,
   top: calc(-275px / 2);
   left: 50%;
   transform: translate(-50%);
-   /* transition: transform 0.4s ease; */
 }
 
 .dish1:hover img {
@@ -451,6 +450,10 @@ h3 {
   color: #5c6574;
   font-size: 15px;
   line-height: 1.5rem;
+}
+
+.row6 {
+  display: none;
 }
 
 .welcome-section {
@@ -1287,8 +1290,69 @@ hr {
     gap: 3px;
   }
 
-  .col {
+  /* .col {
     width: 100%;
+  } */
+
+  .row1 {
+    display: none;
+  }
+
+  .row6 {
+    display: block;
+  }
+
+  .dish1 {
+    top: calc(-225px / 2);
+  }
+
+  .dish1 > img {
+    max-width: 150px;
+  }
+
+  .dish1:hover img {
+    transform: scale(1.1);
+  }
+
+  .price {
+    position: absolute;
+    top: 55px;
+    right: -20px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 14px;
+    z-index: 9;
+    font-size: 12px;
+  }
+
+  .swiper-card {
+    margin-top: 145px;
+    padding-inline: 55px;
+    display: flex;
+    height: 175px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 35px 5px;
+    position: relative;
+  }
+
+  .swiper-card > h3 {
+    font-size: 14px;
+  }
+
+  .swiper-card > p {
+    font-size: 12px;
+  }
+
+  .swiper-card:hover {
+    background-color: white;
+  }
+
+  .swiper-pagination {
+    bottom: 70px;
   }
 }
 
