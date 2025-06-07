@@ -398,17 +398,22 @@ nav,
 }
 
 .dish1 {
-  max-width: 207px;
+  max-width: 180px;
   position: absolute;
-  top: calc(-335px / 2);
+  top: calc(-275px / 2);
   left: 50%;
   transform: translate(-50%);
+   /* transition: transform 0.4s ease; */
+}
+
+.dish1:hover img {
+  transform: scale(1.1);
 }
 
 .price {
   position: absolute;
   top: 75px;
-  right: -20px;
+  right: -50px;
   color: white;
   background-color: black;
   border-radius: 50%;
@@ -420,7 +425,7 @@ nav,
   margin-block: 200px 156px;
   padding-block: 70px;
   display: flex;
-  height: 207px;
+  height: 275px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -429,10 +434,14 @@ nav,
   position: relative;
 }
 
+.card:hover {
+  background-color: white;
+}
+
 h3 {
   text-align: center;
   font-size: 20px;
-  padding-bottom: 21px;
+  padding-block: 21px;
   color: #101a24;
 }
 
@@ -1100,6 +1109,16 @@ hr {
     right: 0;
     background-color: #f59158;
     z-index: 9;
+    animation: upsidedown 1s forwards 1 linear;
+  }
+
+  @keyframes upsidedown {
+    from {
+      transform: translateY(-200px);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
 
   .nav-right > ul {
@@ -1113,13 +1132,13 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
 
   .ham > span {
     display: inline-block;
     height: 3px;
-    width: 40px;
+    width: 30px;
     background-color: black;
   }
 
@@ -1257,6 +1276,17 @@ hr {
 }
 
 @media screen and (max-width: 576px) {
+  /* header section */
+
+  .navbar-brand > a {
+    max-width: 128px;
+  }
+
+  .ham > span {
+    height: 1px;
+    gap: 3px;
+  }
+
   .col {
     width: 100%;
   }
@@ -1329,11 +1359,11 @@ hr {
     font-size: 12px;
   }
 
-      .promo-code .input-field {
-        min-width: 150px;
-        padding: 5px 10px;
-        border-radius: 8px;
-    }
+  .promo-code .input-field {
+    min-width: 150px;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
 
   /* Footer Section */
   footer > div > div {
