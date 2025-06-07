@@ -1053,7 +1053,8 @@ hr {
     gap: 50px; */
     position: absolute;
     bottom: -150px;
-    left: 15px;
+    left: 50%;
+    transform: translate(-50%);
     /* right: 10px; */
     width: 95%;
     border-radius: 50px;
@@ -1298,12 +1299,18 @@ hr {
     display: none;
   }
 
+  .row6 .swiper {
+    width: 100%;
+    height: 380px !important;
+    overflow: hidden;
+  } 
+
   .row6 {
     display: block;
   }
 
   .dish1 {
-    top: calc(-225px / 2);
+    top: calc(-200px / 2);
   }
 
   .dish1 > img {
@@ -1327,10 +1334,10 @@ hr {
   }
 
   .swiper-card {
-    margin-top: 145px;
+    margin-top: 115px;
     padding-inline: 55px;
     display: flex;
-    height: 175px;
+    height: 200px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1432,6 +1439,7 @@ hr {
   /* Footer Section */
   footer > div > div {
     gap: 35px;
+    flex-direction: column;
   }
 
   .footer-frst-div > p,
