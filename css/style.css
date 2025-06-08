@@ -949,6 +949,9 @@ hr {
 
   .banner-content {
     text-align: center;
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
   }
 
   .banner-content .description {
@@ -1382,6 +1385,11 @@ hr {
   }
 
   /* Banner Section */
+
+  .banner-section > div > div {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
   .banner-content .title {
     font-size: 30px;
   }
@@ -1457,6 +1465,9 @@ hr {
   .footer-lists a,
   .row2 p {
     font-size: 12px;
+  }
+
+  .row2 p {
     text-align: center;
   }
 
