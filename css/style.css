@@ -148,6 +148,7 @@ nav,
 .banner-content .title {
   max-width: 510px;
   font-size: 70px;
+  opacity: 1 !important;
 }
 
 .banner-content .description {
@@ -932,7 +933,7 @@ hr {
   gap: 15px;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1230px) {
   /* Banner Section */
   .banner-section {
     padding-top: 0;
@@ -949,9 +950,6 @@ hr {
 
   .banner-content {
     text-align: center;
-    transform: none !important;
-    opacity: 1 !important;
-    transition: none !important;
   }
 
   .banner-content .description {
