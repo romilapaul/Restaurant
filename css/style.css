@@ -412,8 +412,8 @@ nav,
 
 .price {
   position: absolute;
-  top: 75px;
-  right: -50px;
+  top: 18px;
+  right: -34px;
   color: white;
   background-color: black;
   border-radius: 50%;
@@ -753,7 +753,7 @@ h4,
 }
 
 .swipper-section-img {
-  background: url(../assets/swipper-section-img.png) center/contain no-repeat;
+  background: url(../assets/swipper-section-img.png) center / contain no-repeat;
   max-width: 1151px;
   height: 407px;
   display: flex;
@@ -763,8 +763,9 @@ h4,
   gap: 50px;
   position: absolute;
   bottom: calc(-407px / 2);
-  left: 183px;
-  right: 183px;
+  left: 50%;
+  transform: translatex(-50%);
+  padding: 200px;
 }
 
 .swipper-section-img > p {
